@@ -23,10 +23,7 @@ const JuegosProvider = ({children}) =>{
                 const url = `https://www.freetogame.com/api/games` 
                 
                 console.log(url) 
-                const {data}  = await axios.get(url, {
-                    mode: "cors",
-                    headers: {"Access-Control-Allow-Origin": "*"}
-                } )
+                const {data}  = await axios.get(url)
                 console.log(data)
 
 
